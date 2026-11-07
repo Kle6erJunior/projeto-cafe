@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-principal: #3f2114;
+    --cor-secundaria: #592219;
+    --cor-terciaria: #7A4E47;
+    --cor-letra: #F2E3D5;
+    --cor-letra-destaque: #dc9141;
+
+    --fonte-padrao:'Jost', Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor-principal);
+}
+
+
+menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 73px;    
+    padding: 0px 8%;
+    background-color: var(--cor-principal);
+}
+
+menu > h1{
+    color: var(--cor-letra-destaque);
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+
+menu > ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+menu > ul > li > a{
+    color: var(--cor-letra);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: var(--fonte-padrao);
+}
+
+menu > ul > li > a:hover{
+    color: var(--cor-letra-destaque);
+    text-decoration: underline;
+}
+
+section#hero{
+    background-color: var(--cor-secundaria);
+    height: 295px;
+}
+
+#conteudo-hero > h1{
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-weight: 500;
+    font-size: 2.5em;
+    padding: 50px 15px 15px 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.593);
+}
+
+#conteudo-hero > p{
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 10px;
+    letter-spacing: 0.7px;
+    line-height: 1.8px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.555);
+}
+
+#conteudo-hero > a{
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    padding-top: 10px;
+    margin-top: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.592);
+    border-radius: 18px;
+    color: var(--cor-terciaria);
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.425);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    
+}
+
+#conteudo-hero > a:hover{
+    color: var(--cor-letra-destaque);
+}
