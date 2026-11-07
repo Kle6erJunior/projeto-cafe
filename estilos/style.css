@@ -107,3 +107,24 @@ section#hero{
 #conteudo-hero > a:hover{
     color: var(--cor-letra-destaque);
 }
+
+main{
+    position: relative;
+    width: 98vw;
+    height: 100vh;
+}
+
+table{
+    width: 750px;
+    border-collapse: collapse;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 15px;
+}
+
