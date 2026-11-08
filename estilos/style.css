@@ -109,9 +109,21 @@ section#hero{
 }
 
 main{
+    display: block;
     position: relative;
     width: 98vw;
     height: 100vh;
+}
+
+caption.legenda{
+    font-family: var(--fonte-padrao);
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #f3c28dc0;
+    color: var(--cor-letra-destaque);
+    padding: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
 }
 
 table{
@@ -123,8 +135,34 @@ table{
     transform: translate(-50%, -50%);
 }
 
-td, th{
-    border: 1px solid black;
-    padding: 15px;
+
+thead{
+    background-color: var(--cor-letra-destaque);
+    font-family: var(--fonte-padrao);
+    height: 40px;
+    padding-right: 15px;
+    
 }
 
+
+td{
+    border-bottom: 1px solid #f3c28d9d;
+    padding: 15px;
+    background-color: var(--cor-terciaria);
+    color: rgb(248, 224, 191);
+    font-size: 1.1em;
+}
+
+tr:nth-child(odd) td {
+    background-color: var(--cor-principal);
+}
+
+.preco{
+    text-align: right;
+}
+
+
+
+iframe{
+    margin: 0 auto;
+}
